@@ -1,3 +1,0 @@
-2
-NavMainLevelData, NavMainLevelData.nav
-NavSevarogLevelData, NavSevarogLevelData.nav
