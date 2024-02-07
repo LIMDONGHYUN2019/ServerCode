@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{BE096252-9AF9-4556-9B78-E1805280FB52}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <IncludePath>../../Engine/Include/;../../DBEngine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <TargetName>$(ProjectName)32_Debug</TargetName>
+    <IncludePath>../../Engine/Include/;../../DBEngine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <TargetName>$(ProjectName)32</TargetName>
+    <IncludePath>../../Engine/Include/;../../DBEngine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <IncludePath>../../Engine/Include/;../../DBEngine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AIThread.cpp" />
+    <ClCompile Include="AI\AIAgent.cpp" />
+    <ClCompile Include="AI\AIDefault.cpp" />
+    <ClCompile Include="AI\AISevarog.cpp" />
+    <ClCompile Include="GameIocp.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameObject\GameObject.cpp" />
+    <ClCompile Include="GameObject\NPC\Boss.cpp" />
+    <ClCompile Include="GameObject\NPC\FinalBoss.cpp" />
+    <ClCompile Include="GameObject\NPC\Golem.cpp" />
+    <ClCompile Include="GameObject\NPC\Minion.cpp" />
+    <ClCompile Include="GameObject\NPC\Monster.cpp" />
+    <ClCompile Include="GameObject\NPC\MonsterManager.cpp" />
+    <ClCompile Include="GameObject\NPC\MonsterSpawnPoint.cpp" />
+    <ClCompile Include="GameObject\NPC\NPC.cpp" />
+    <ClCompile Include="GameObject\NPC\Sevarog.cpp" />
+    <ClCompile Include="GameObject\NPC\Troll.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Level\BossLevel.cpp" />
+    <ClCompile Include="Level\DesertLevel.cpp" />
+    <ClCompile Include="Level\GameArea.cpp" />
+    <ClCompile Include="Level\MainLevel.cpp" />
+    <ClCompile Include="Level\Level.cpp" />
+    <ClCompile Include="Level\LevelManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MonitorThread.cpp" />
+    <ClCompile Include="Quest.cpp" />
+    <ClCompile Include="Skill\Skill.cpp" />
+    <ClCompile Include="Skill\SkillManager.cpp" />
+    <ClCompile Include="Skill\SkillTree.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AIThread.h" />
+    <ClInclude Include="AI\AIAgent.h" />
+    <ClInclude Include="AI\AIDefault.h" />
+    <ClInclude Include="AI\AISevarog.h" />
+    <ClInclude Include="GameInfo.h" />
+    <ClInclude Include="GameIocp.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameObject\GameObject.h" />
+    <ClInclude Include="GameObject\NPC\Boss.h" />
+    <ClInclude Include="GameObject\NPC\FinalBoss.h" />
+    <ClInclude Include="GameObject\NPC\Golem.h" />
+    <ClInclude Include="GameObject\NPC\Minion.h" />
+    <ClInclude Include="GameObject\NPC\Monster.h" />
+    <ClInclude Include="GameObject\NPC\MonsterManager.h" />
+    <ClInclude Include="GameObject\NPC\MonsterSpawnPoint.h" />
+    <ClInclude Include="GameObject\NPC\NPC.h" />
+    <ClInclude Include="GameObject\NPC\Sevarog.h" />
+    <ClInclude Include="GameObject\NPC\Troll.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Level\BossLevel.h" />
+    <ClInclude Include="Level\DesertLevel.h" />
+    <ClInclude Include="Level\GameArea.h" />
+    <ClInclude Include="Level\MainLevel.h" />
+    <ClInclude Include="Level\Level.h" />
+    <ClInclude Include="Level\LevelManager.h" />
+    <ClInclude Include="MonitorThread.h" />
+    <ClInclude Include="Quest.h" />
+    <ClInclude Include="Skill\Skill.h" />
+    <ClInclude Include="Skill\SkillManager.h" />
+    <ClInclude Include="Skill\SkillTree.h" />
+    <ClInclude Include="Sync.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

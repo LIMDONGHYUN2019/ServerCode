@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="01. Manager">
+      <UniqueIdentifier>{e9fb185f-735b-45ad-a258-a591d7b9ae03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Iocp">
+      <UniqueIdentifier>{3665dafb-233b-43ed-82d1-29e1078989ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. User">
+      <UniqueIdentifier>{97773de5-855f-481c-a6cb-e71cbe0a9a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06. Store">
+      <UniqueIdentifier>{110f458c-cebf-4cab-9627-641a80430e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. User\Inventory">
+      <UniqueIdentifier>{445296d9-4638-45c7-ab26-91fa51e3e4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Level">
+      <UniqueIdentifier>{bd30eb50-8f90-479e-9973-bb82374a983c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Level\02. DesertLevel">
+      <UniqueIdentifier>{c62dff2c-69ba-4c84-8870-99fdcfbb7195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Level\03.SevarogBossLevel">
+      <UniqueIdentifier>{ba0936cc-d76b-4df0-8259-63bfc8ea3434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Level\01. MainLevel">
+      <UniqueIdentifier>{4624aef1-6cef-46db-964d-e826e4f142b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. AI">
+      <UniqueIdentifier>{bb8ee441-0474-40eb-9770-cb4bcfa6e317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. GameObject">
+      <UniqueIdentifier>{4458e81a-7aff-4e3d-a913-f50bfac050e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. GameObject\01. Character">
+      <UniqueIdentifier>{1e2af9c3-0613-4cd5-8ce8-5c59bfdb7d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09. Skill">
+      <UniqueIdentifier>{3d19739f-7492-471d-881e-f39ff797e400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. User\Quest">
+      <UniqueIdentifier>{d85ba261-e967-48fe-a0f3-581016c2b21d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>01. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameIocp.cpp">
+      <Filter>02. Iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>03. User</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>03. User</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>01. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorThread.cpp">
+      <Filter>01. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>03. User\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="AIThread.cpp">
+      <Filter>01. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Level.cpp">
+      <Filter>07. Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelManager.cpp">
+      <Filter>07. Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\GameArea.cpp">
+      <Filter>07. Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\BossLevel.cpp">
+      <Filter>07. Level\03.SevarogBossLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\DesertLevel.cpp">
+      <Filter>07. Level\02. DesertLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\MainLevel.cpp">
+      <Filter>07. Level\01. MainLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\AIAgent.cpp">
+      <Filter>08. AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\AIDefault.cpp">
+      <Filter>08. AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\AISevarog.cpp">
+      <Filter>08. AI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\GameObject.cpp">
+      <Filter>05. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\Boss.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\FinalBoss.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\Golem.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\Minion.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\Monster.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\MonsterManager.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\MonsterSpawnPoint.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\NPC.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\Sevarog.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\NPC\Troll.cpp">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill\SkillManager.cpp">
+      <Filter>09. Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill\SkillTree.cpp">
+      <Filter>09. Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill\Skill.cpp">
+      <Filter>09. Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Quest.cpp">
+      <Filter>03. User\Quest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManager.h">
+      <Filter>01. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameIocp.h">
+      <Filter>02. Iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>03. User</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>01. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorThread.h">
+      <Filter>01. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>03. User\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="AIThread.h">
+      <Filter>01. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Level.h">
+      <Filter>07. Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelManager.h">
+      <Filter>07. Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\GameArea.h">
+      <Filter>07. Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\BossLevel.h">
+      <Filter>07. Level\03.SevarogBossLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\DesertLevel.h">
+      <Filter>07. Level\02. DesertLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\MainLevel.h">
+      <Filter>07. Level\01. MainLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\AIAgent.h">
+      <Filter>08. AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\AIDefault.h">
+      <Filter>08. AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\AISevarog.h">
+      <Filter>08. AI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\GameObject.h">
+      <Filter>05. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\Boss.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\FinalBoss.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\Golem.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\Minion.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\Monster.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\MonsterManager.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\MonsterSpawnPoint.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\NPC.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\Sevarog.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\NPC\Troll.h">
+      <Filter>05. GameObject\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Sync.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill\SkillManager.h">
+      <Filter>09. Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill\SkillTree.h">
+      <Filter>09. Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill\Skill.h">
+      <Filter>09. Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManager.h">
+      <Filter>03. User</Filter>
+    </ClInclude>
+    <ClInclude Include="Quest.h">
+      <Filter>03. User\Quest</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
