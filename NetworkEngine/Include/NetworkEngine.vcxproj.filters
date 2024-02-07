@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="02. Network">
+      <UniqueIdentifier>{ddfaf913-fbab-4af4-9c22-21c2860ffeee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib">
+      <UniqueIdentifier>{d0f3873c-1a23-4d12-bd2d-83144ab2af19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\01. Stream">
+      <UniqueIdentifier>{a66cc9ca-c014-4b8c-b97b-213b45294d6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\02. Thread">
+      <UniqueIdentifier>{1d1b07b5-bcea-48c7-bc45-c44fc40c0d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\03. Registry">
+      <UniqueIdentifier>{4fc82d2a-e100-4507-8de6-dfb3e1d18cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\04. IniFile">
+      <UniqueIdentifier>{cd77d758-ca1b-4d04-9bd9-e2d4cc07db18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\05. Queue">
+      <UniqueIdentifier>{44002b15-608d-43af-90c9-2f09340bc54a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\06. Log">
+      <UniqueIdentifier>{e94865d0-9cf0-4d14-ac07-b5c21760b248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\07. MemoryPool">
+      <UniqueIdentifier>{d744454b-cc97-4595-bebd-4ab7e2438cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\08. Crypt">
+      <UniqueIdentifier>{0d4c3dbe-2e6b-41d4-81f3-e8259ef2bed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\09. Sevice">
+      <UniqueIdentifier>{7346c786-ad5a-4b93-8faf-761ac4b378e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\10. MiniDump">
+      <UniqueIdentifier>{c681c47f-3746-48ad-ae5d-e554af30d2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Network\01. Session">
+      <UniqueIdentifier>{8848ce7b-b0e9-4590-ad9f-f2d745527f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Network\02. EventSelect">
+      <UniqueIdentifier>{eeda726a-0457-43d8-b31d-47d468cff1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Network\03. IOCP">
+      <UniqueIdentifier>{e6bfe971-92e2-488f-8579-30b432098cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\12. Quick">
+      <UniqueIdentifier>{3d1d1e4b-bb5c-42bb-821e-e77c42344f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. LowLib\11. Path">
+      <UniqueIdentifier>{2ae95e13-4c36-4e80-9f6d-25da4175d81b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Stream.h">
+      <Filter>01. LowLib\01. Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>01. LowLib\02. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadManager.h">
+      <Filter>01. LowLib\02. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>01. LowLib\03. Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFile.h">
+      <Filter>01. LowLib\04. IniFile</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleQueue.h">
+      <Filter>01. LowLib\05. Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>01. LowLib\06. Log</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.h">
+      <Filter>01. LowLib\07. MemoryPool</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypt.h">
+      <Filter>01. LowLib\08. Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Service.h">
+      <Filter>01. LowLib\09. Sevice</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniDump.h">
+      <Filter>01. LowLib\10. MiniDump</Filter>
+    </ClInclude>
+    <ClInclude Include="CriticalSection.h">
+      <Filter>01. LowLib\02. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadSync.h">
+      <Filter>01. LowLib\02. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkEngine.h">
+      <Filter>02. Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetSession.h">
+      <Filter>02. Network\01. Session</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PacketSession.h">
+      <Filter>02. Network\01. Session</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketQueue.h">
+      <Filter>01. LowLib\05. Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\EventSelect.h">
+      <Filter>02. Network\02. EventSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Iocp.h">
+      <Filter>02. Network\03. IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ClientEventSelect.h">
+      <Filter>02. Network\02. EventSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>01. LowLib\11. Path</Filter>
+    </ClInclude>
+    <ClInclude Include="DualQuick.h">
+      <Filter>01. LowLib\12. Quick</Filter>
+    </ClInclude>
+    <ClInclude Include="Quick.h">
+      <Filter>01. LowLib\12. Quick</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Stream.cpp">
+      <Filter>01. LowLib\01. Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>01. LowLib\02. Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadManager.cpp">
+      <Filter>01. LowLib\02. Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>01. LowLib\03. Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile.cpp">
+      <Filter>01. LowLib\04. IniFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypt.cpp">
+      <Filter>01. LowLib\08. Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>01. LowLib\09. Sevice</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniDump.cpp">
+      <Filter>01. LowLib\10. MiniDump</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkEngine.cpp">
+      <Filter>02. Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetSession.cpp">
+      <Filter>02. Network\01. Session</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PacketSession.cpp">
+      <Filter>02. Network\01. Session</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketQueue.cpp">
+      <Filter>01. LowLib\05. Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\EventSelect.cpp">
+      <Filter>02. Network\02. EventSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Iocp.cpp">
+      <Filter>02. Network\03. IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ClientEventSelect.cpp">
+      <Filter>02. Network\02. EventSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>01. LowLib\11. Path</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
